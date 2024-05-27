@@ -35,7 +35,7 @@ window.onload = function() {
 
         update(context) {
             this.draw(context);
-            this.posX += this.speedX;
+            this.posX -= this.speedX;
             this.posY += this.speedY;
 
             // Eliminar la imagen si toca el límite inferior del canvas
@@ -79,7 +79,7 @@ window.onload = function() {
     }
 
     const imageObjects = [];
-    const maxImages = 15;  // Límite de creación de imágenes
+    const maxImages = 10;  // Límite de creación de imágenes
 
     function createImageObject() {
         if (imageObjects.length >= maxImages) {
