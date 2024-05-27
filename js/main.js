@@ -79,7 +79,7 @@ window.onload = function() {
     }
 
     const imageObjects = [];
-    const maxImages = 10;  // Límite de creación de imágenes
+    const maxImages = 15;  // Límite de creación de imágenes
 
     function createImageObject() {
         if (imageObjects.length >= maxImages) {
