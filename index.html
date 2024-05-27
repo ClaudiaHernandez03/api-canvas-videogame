@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cangrejo Al Agua</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        p {
+    color: rgb(248, 63, 39); /* Cambia 'blue' por el color que desees */
+  }
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('assets/img/Fondo Playa.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Georgia ;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(134, 133, 133, 0.5);
+            color: rgb(252, 252, 252);
+            padding: 15px;
+            text-align: center;
+        }
+        header img {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        footer {
+            background: rgba(198, 160, 114, 0.5);
+            color: rgb(10, 10, 10);
+            padding: 10px;
+            text-align: center;
+        }
+        #canvas {
+            display: block;
+            background-position: center;
+            background-size: cover;
+            margin: 15px auto;
+            background-image: url('assets/img/Fondo.jpg');
+            border: 3px solid black;
+        }
+        #restartButton {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: rgb(251, 250, 248);
+            border: none;
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cangrejo Al Agua</h1>
+    </header>
+
+    <main>
+        <p>"Atrapa a los cangrejos antes de que escapen o perderas"</p>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <button id="restartButton">Reiniciar Juego</button>
+    </main>
+
+    <footer>
+        <p>Creado por Claudia HJ</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
